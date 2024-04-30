@@ -1,16 +1,14 @@
 {
-    "version": 2,
-    "builds": [
-     {
-      "src": "app.js",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["dist/**"] }
-     }
-    ],
-    "routes": [
-     {
-      "src": "/(.*)",
-      "dest": "app.js"
-     }
-    ]
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+     "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+     "express": "^4.18.2"
+    }
    }
