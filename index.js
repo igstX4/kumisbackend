@@ -11,7 +11,7 @@ mongoose.connect
     .catch((e) => console.log('DB err', e))
 
 const router = express()
-
+router.get("/", (req, res) => res.send("Express on Vercel"));
 router.use(express.json())
 router.use(cors())
 
